@@ -1,8 +1,4 @@
 #!/bin/bash
-set -e
-
-sudo add-apt-repository -y ppa:graphics-drivers/ppa
-sudo apt install -y nvidia-driver-396
 
 # This will use python command at the end and there's no such command.
 # So, we need to ignore that command.
