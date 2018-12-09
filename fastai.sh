@@ -287,7 +287,7 @@ create () {
 
   echo "Setting up the instance"
   setup_script="https://raw.githubusercontent.com/serdarozsoy/gcp_create/master/setup-gce.sh?__ts=$RANDOM"
-  gcloud compute --project $DEVSHELL_PROJECT_ID ssh --zone $current_zone "fastai-boot-1" -- "curl $setup_script > /tmp/setup.sh && bash /tmp/setup.sh"
+  gcloud compute --project $DEVSHELL_PROJECT_ID ssh --zone $current_zone "fastai-boot-1"
 
   echo "Deleting the boot instance"
   delete_boot_instance
